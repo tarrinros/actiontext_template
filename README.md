@@ -1,24 +1,31 @@
-# README
+# ActionText template for Rails 5.2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+You can create article using ActionText form, add photos, style text etc.
 
-Things you may want to cover:
+### Requirements
 
-* Ruby version
+`ruby >= 2.5.0`
 
-* System dependencies
+`rails ~> 5.2.0`
 
-* Configuration
+`yarn` - [installation manual](https://yarnpkg.com/lang/en/docs/install/#windows-stable) 
 
-* Database creation
+`homebrew` - [installation manual for linux](https://docs.brew.sh/Homebrew-on-Linux)
 
-* Database initialization
+### Installation & using
 
-* How to run the test suite
+In `terminal`
 
-* Services (job queues, cache servers, search engines, etc.)
+- `$ brew install imagemagick vips`
 
-* Deployment instructions
+- `$ git clone repository_link`
 
-* ...
+- `$ gem install bundler` - if needed
+
+- `$ bundle install`
+
+- `$ rails db:migrate`
+
+- `$ rails s` for server starting
+
+Then open `http://localhost:3000/articles/new` at your web-browser
